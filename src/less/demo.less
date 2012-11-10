@@ -1,0 +1,22 @@
+.sprite(@sprite){
+	background-image: url(../images/assets-sprite.png);
+	width: ~`S[@{sprite}].w`;
+	height: ~`S[@{sprite}].h`;
+	background-position: ~`S[@{sprite}].xy`;
+}
+
+#demo1 {
+	.sprite("bob");
+	border: 1px solid red;
+	margin: 5px;
+}
+
+#demo2 {
+	.sprite("twitter");
+	border: 1px solid green;
+	margin: 5px;
+}
+
+#nonsprite1 {
+	margin: 5px;
+}
